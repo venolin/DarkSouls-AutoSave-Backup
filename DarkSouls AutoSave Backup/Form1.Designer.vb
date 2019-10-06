@@ -29,6 +29,7 @@ Partial Class Form1
         Me.lblStatus = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.staMain.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -66,7 +67,16 @@ Partial Class Form1
         '
         'Timer1
         '
-        Me.Timer1.Interval = 5000000
+        Me.Timer1.Interval = 300000
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.Color.Lime
+        Me.Label2.Location = New System.Drawing.Point(13, 54)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(267, 176)
+        Me.Label2.TabIndex = 2
         '
         'Form1
         '
@@ -75,13 +85,14 @@ Partial Class Form1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(292, 266)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.staMain)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "DarkSouls AutoSave Backup V1.0 Beta"
+        Me.Text = "Game AutoSave Backup V1.2"
         Me.staMain.ResumeLayout(False)
         Me.staMain.PerformLayout()
         Me.ResumeLayout(False)
@@ -93,5 +104,5 @@ Partial Class Form1
     Friend WithEvents lblStatus As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-
+    Friend WithEvents Label2 As Label
 End Class

@@ -9,8 +9,8 @@
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        If IO.File.Exists(System.Windows.Forms.Application.StartupPath + "Ven.txt") Then
-            sr = New IO.StreamReader(System.Windows.Forms.Application.StartupPath + "Ven.txt")
+        If IO.File.Exists(System.Windows.Forms.Application.StartupPath + "\Ven.txt") Then
+            sr = New IO.StreamReader(System.Windows.Forms.Application.StartupPath + "\Ven.txt")
 
             Try
                 lines = sr.ReadLine.Split(vbTab)
@@ -23,7 +23,7 @@
             sr.Close()
 
         Else
-            sw = New IO.StreamWriter(System.Windows.Forms.Application.StartupPath + "Ven.txt")
+            sw = New IO.StreamWriter(System.Windows.Forms.Application.StartupPath + "\Ven.txt")
             Call ChangePath()
         End If
 
@@ -38,16 +38,14 @@
         If MessageBox.Show("Please select the location of the save game files", "Set Location", MessageBoxButtons.OKCancel) = Windows.Forms.DialogResult.OK Then
             fbdSelectDir.ShowDialog()
 
-            Do While Bool = False
-                If IO.File.Exists(fbdSelectDir.SelectedPath + "DRAKS00005.sl2") = False Then
-                    MessageBox.Show("Dark Souls save game file does not exist in location. Please select a valid save game location", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    fbdSelectDir.ShowDialog()
-                Else : Bool = True
-                End If
-            Loop
+            If fbdSelectDir.ShowDialog.OK Then
+                dir = fbdSelectDir.SelectedPath
+            Else
+            End If
 
 
-            dir = fbdSelectDir.SelectedPath
+
+
 
 
             PopulateStatus()
@@ -66,9 +64,9 @@
     End Function
 
     Private Sub lblStatus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblStatus.Click
-       
 
-        sw = New IO.StreamWriter(System.Windows.Forms.Application.StartupPath + "Ven.txt")
+
+        sw = New IO.StreamWriter(System.Windows.Forms.Application.StartupPath + "\Ven.txt")
         ChangePath()
     End Sub
 
@@ -76,24 +74,19 @@
         If Label1.Text = "STOPPED ..." Then
             Label1.Text = "RUNNING ..."
             Timer1.Enabled = True
+            Label2.Text = Label2.Text + vbNewLine + "Running ... " + Now()
             Timer1_Tick(sender, e)
         Else : Label1.Text = "STOPPED ..."
             Timer1.Enabled = False
+            Label2.Text = Label2.Text + vbNewLine + "Stopped ... " + Now()
         End If
 
     End Sub
 
     Public Function RunBackup()
 
-        For i As Integer = 1 To 20
-            If IO.Directory.Exists(dir + CStr(Format(Today, "yyyy-MM-dd")) + " " + CStr(i)) = True Then
-            Else
-                IO.Directory.CreateDirectory(dir + CStr(Format(Today, "yyyy-MM-dd")) + " " + CStr(i))
-                IO.File.Copy(dir + "DRAKS00005.sl2", dir + CStr(Format(Today, "yyyy-MM-dd")) + " " + CStr(i) + "\DRAKS00005.sl2")
-                Exit For
-            End If
-
-        Next
+        My.Computer.FileSystem.CopyDirectory(dir, System.Windows.Forms.Application.StartupPath + "\" + CStr(Format(Now, "yyyy-MM-dd HH.mm.ss")))
+        Label2.Text = Label2.Text + vbNewLine + "Backup ... " + Now()
 
     End Function
 
