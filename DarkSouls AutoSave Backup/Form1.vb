@@ -4,7 +4,7 @@
     Dim sr As IO.StreamReader
     Dim config As DataTable
     Dim lines As Array
-
+    Dim logLineCount As Integer
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -93,4 +93,17 @@
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         RunBackup()
     End Sub
+
+    Public Function OutputEcho(Info As String) As String
+        logLineCount += 1
+        Return vbNewLine + Info + Now()
+
+    End Function
+
+    Public Function DisplayCleaner()
+        If logLineCount >= 12 Then
+
+        End If
+    End Function
+
 End Class

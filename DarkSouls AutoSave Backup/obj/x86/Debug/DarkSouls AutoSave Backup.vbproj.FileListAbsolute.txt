@@ -25,14 +25,18 @@ C:\Documents and Settings\vnaidoo\my documents\visual studio 2010\Projects\DarkS
 C:\Documents and Settings\vnaidoo\my documents\visual studio 2010\Projects\DarkSouls AutoSave Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.TrustInfo.xml
 C:\Documents and Settings\vnaidoo\my documents\visual studio 2010\Projects\DarkSouls AutoSave Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.exe.manifest
 C:\Documents and Settings\vnaidoo\my documents\visual studio 2010\Projects\DarkSouls AutoSave Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.application
-C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.vbprojAssemblyReference.cache
 C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls_AutoSave_Backup.Form1.resources
 C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls_AutoSave_Backup.Resources.resources
 C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.vbproj.GenerateResource.cache
-C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.vbproj.CoreCompileInputs.cache
 C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.exe
 C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.xml
 C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.pdb
 C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\bin\Debug\DarkSouls AutoSave Backup.exe
 C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\bin\Debug\DarkSouls AutoSave Backup.pdb
 C:\Users\Venolin\Source\Repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\bin\Debug\DarkSouls AutoSave Backup.xml
+C:\Users\Venolin\source\repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\bin\Debug\DarkSouls AutoSave Backup.exe.manifest
+C:\Users\Venolin\source\repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\bin\Debug\DarkSouls AutoSave Backup.application
+C:\Users\Venolin\source\repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.TrustInfo.xml
+C:\Users\Venolin\source\repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.exe.manifest
+C:\Users\Venolin\source\repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.application
+C:\Users\Venolin\source\repos\DarkSouls-AutoSave-Backup\DarkSouls AutoSave Backup\obj\x86\Debug\DarkSouls AutoSave Backup.vbprojResolveAssemblyReference.cache
