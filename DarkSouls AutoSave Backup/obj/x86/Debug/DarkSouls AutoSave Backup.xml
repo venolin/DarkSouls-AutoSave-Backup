@@ -22,5 +22,10 @@ DarkSouls AutoSave Backup
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:DarkSouls_AutoSave_Backup.My.Resources.Resources.sir_artorias">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
