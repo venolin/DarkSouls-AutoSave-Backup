@@ -8,7 +8,7 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="DarkSouls AutoSave Backup.exe.manifest" size="6711">
+    <dependentAssembly dependencyType="install" codebase="Application Files\DarkSouls AutoSave Backup_1_0_0_2\DarkSouls AutoSave Backup.exe.manifest" size="6711">
       <assemblyIdentity name="DarkSouls AutoSave Backup.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
